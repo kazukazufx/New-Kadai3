@@ -22,17 +22,21 @@ echo "\n";
 
 // 課題３
 
-function total ($arr) {
-    $array = [1, 3, 5, 7, 9];
-    $arr = $array[0] * $array[1] * $array[2] * $array[3] * $array[4];
-    return $arr;
+function a ($arr) {
+    $value = 1;
+    foreach ($arr as $b) {
+        $value *= $b;
+    }
+    return $value;
 }
-echo total ($array);
+$arr = array(1, 3, 5, 7, 9);
+echo a ($arr);
 echo "\n";
 
 // 課題４
 
 function max_array ($arr) {
+    $arr = [10, 8, 6, 4, 2];
     $max_number = $arr[0];
     foreach ($arr as $a) {
     if ($max_number < $a) {
